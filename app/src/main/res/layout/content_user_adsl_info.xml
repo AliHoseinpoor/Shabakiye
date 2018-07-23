@@ -1,0 +1,256 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.UserAdslInfoActivity"
+    tools:showIn="@layout/activity_user_adsl_info">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="اطلاعات سرویس"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceTitle"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام سرویس : "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView10"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServicePrice"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="قیمت سرویس : "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AdslUserInfoCardServiceTitle"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServicePahnayeBand"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="حجم کل سرویس : "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AdslUserInfoCardServicePrice"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceTitleAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServiceTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServicePriceAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServicePrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServicePahnayeBandAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServicePahnayeBand"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceTrafic"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="حجم مصرف شده : "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AdslUserInfoCardServicePahnayeBand"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceStartDate"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="زمان شروع سرویس : "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AdslUserInfoCardServiceTrafic"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceExpireDate"
+                    style="@style/AdslUserInfoCardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="زمان پایان سرویس : "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AdslUserInfoCardServiceStartDate"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceTraficAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServiceTrafic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceStartDateAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServiceStartDate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoCardServiceExpireDateAns"
+                    style="@style/AdslUserInfoCardTextAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="@id/AdslUserInfoCardServiceExpireDate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="TextView"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/AdslUserInfoProgressRemainDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/AdslUserInfoRemainDay"
+                        app:layout_constraintStart_toStartOf="@+id/AdslUserInfoRemainDay"
+                        app:layout_constraintTop_toBottomOf="@+id/AdslUserInfoRemainDay"
+                        tools:text="TextView"/>
+
+                    <TextView
+                        android:id="@+id/AdslUserInfoProgressRemainTrafic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/AdslUserInfoRemainData"
+                        app:layout_constraintStart_toStartOf="@+id/AdslUserInfoRemainData"
+                        app:layout_constraintTop_toBottomOf="@+id/AdslUserInfoRemainData"
+                        tools:text="TextView"/>
+
+                    <com.example.ali.shabakiye.Helper.CircleProgress
+                        android:id="@+id/AdslUserInfoRemainDay"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="64dp"
+                        android:layout_marginRight="64dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/AdslUserInfoRemainData"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.example.ali.shabakiye.Helper.CircleProgress
+                        android:id="@+id/AdslUserInfoRemainData"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Adsl</string>
+    <string name="collapsingToolbarTitle">پنل کاربری</string>
+    <string name="splash_welcome">سلام !!\nخوش اوومدی</string>
+    <string name="AdslUserInfoMobile">موبایل : %s</string>
+    <string name="AdslUserInfoNatCode">کد ملی : %s</string>
+    <string name="AdslUserInfoBirthday">تاریخ تولد : %1$s/%2$s/%3$s</string>
+    <string name="AdslUserInfoName">نام : %1$s %2$s</string>
+
+    <string name="DialogUserDetailPhone">تلفن : %1$s-%2$s</string>
+    <string name="DialogUserDetailServiceTitle">نام سرویس : %s</string>
+
+    <string name="DialogUserDetailServiceRemainDay">تعداد روز باقی مانده : %1$s از %2$s</string>
+    <string name="DialogUserDetailServiceRemainTrafic">میزان حجم باقی مانده : %1$s از %2$s</string>
+    <string name="DialogUserDetailServiceStartDate">تاریخ شروع سرویس : %s</string>
+    <string name="DialogUserDetailServiceExpireDate">تاریخ پایان سرویس : %s</string>
+
+    <string name="AdslUserInfoProgressRemainTrafic">%1$dGB\nاز %2$dGB</string>
+    <string name="AdslUserInfoProgressRemainDay">%1$s روز\nاز %2$s روز</string>
+    <string name="servicePrice">%s ریال</string>
+    <string name="serviceHajm">%d گیگابایت</string>
+
+</resources>

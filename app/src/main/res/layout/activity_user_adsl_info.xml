@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AdslUserInfoCoordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:visibility="visible">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AdslUserInfoAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/AdslUserInfoCollapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/AdslUserInfoCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/adsl_user_info_toolbar_cover"
+                app:layout_collapseMode="parallax"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="pin">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/AdslUserInfoProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/AdslUserInfoFullName"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12dp"
+                    app:civ_border_width="0dp"
+                    tools:src="@mipmap/ic_login"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_toLeftOf="@id/AdslUserInfoProfile"
+                    android:layout_toStartOf="@id/AdslUserInfoProfile"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Ali Hoseinpoor"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/AdslUserInfoMelicode"
+                    android:layout_alignRight="@id/AdslUserInfoMelicode"
+                    android:layout_below="@id/AdslUserInfoMelicode"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="09390475956"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/AdslUserInfoFullName"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/AdslUserInfoFullName"
+                    android:layout_toStartOf="@id/AdslUserInfoFullName"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="1397/3/3"/>
+
+                <TextView
+                    android:id="@+id/AdslUserInfoMelicode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/AdslUserInfoFullName"
+                    android:layout_alignRight="@id/AdslUserInfoFullName"
+                    android:layout_below="@id/AdslUserInfoFullName"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="5100158298"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:titleTextColor="@android:color/holo_red_dark"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/AdslUserInfoFloatinFullDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_full_detail_user_info"
+        app:fabSize="normal"
+        app:layout_anchor="@id/AdslUserInfoAppbar"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <include layout="@layout/content_user_adsl_info"/>
+
+</android.support.design.widget.CoordinatorLayout>
